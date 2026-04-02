@@ -1,0 +1,622 @@
+:root {
+    --color-primary: #5C6010;
+    --color-accent: #ACB502;
+    --color-dark: #2D2A26;
+    --color-button: #8C920B;
+    --spacing-sm: 1.25em;
+    --spacing-md: 2em;
+    --spacing-lg: 5em;
+    --border-radius-bouton: 0.625rem;
+    --border-radius-input: 0.9375rem;
+    --border-radius-card: 1.25rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+p {
+    margin-top: 1.25em;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+}
+
+section {
+    transition: opacity 0.9s;
+}
+
+.screenreaders-only {
+    display: none;
+}
+
+.main-content__title,
+.about-the-project__title,
+.creativity-section__title,
+.superpowers__title,
+.qualities-cards__title,
+.opinions__title,
+.colleagues__title {
+    font-size: 2.5em;
+}
+
+.main-content__title strong,
+.main-content__link,
+.about-the-project__title,
+.about-the-project__link,
+.qualities-cards__title strong,
+.qualities-cards__item-title,
+.creativity-section__title strong,
+.footer__nav-menu h3,
+.footer__useful__title,
+label,
+input,
+.form__submit--btn,
+.colleagues__name {
+    font-weight: 700;
+}
+
+.creativity-section span,
+.superpowers__subtitle,
+.creativity-section__subtitle,
+.graphy-family__role {
+    color: var(--color-primary);
+}
+
+label,
+.footer__nav-menu h3,
+.footer__useful__title {
+    color: var(--color-accent);
+}
+
+.nav__list__item a {
+    color: black;
+}
+
+.main-content__link,
+.about-the-project__link {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.6865em 1.84375em;
+    border-radius: var(--border-radius-bouton);
+}
+
+.about-the-project,
+.qualities-cards,
+.creativity-section,
+.superpowers,
+.opinions,
+.colleagues {
+    margin-left: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
+}
+
+header {
+    padding: 2em 1.375em 2.8125em 1.5625em;
+}
+
+header p {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header input {
+    display: none;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+}
+
+.burger__menu {
+    width: 30px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.burger__line {
+    background-color: var(--color-primary);
+    display: block;
+    width: 1.666666666666667em;
+    min-height: 5px;
+    border-radius: var(--border-radius-bouton);
+    margin-top:0.1875em;
+}
+
+
+.header__nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 0.3125em;
+}
+
+#menu-toggle:checked ~ .header__nav {
+    max-height: 500px;
+}
+
+.nav__list__item {
+    margin-top: 0.3125em;
+    border-bottom-color: black;
+}
+
+section.main__hero {
+    background-image: url("../img/00-TAO_Territoire-2023_BG1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 2.875em 1em 4.1875em 1.25em;
+    position: relative;
+}
+
+.main-content__text {
+    margin-bottom: 1.8em;
+}
+
+.main-content__link {
+    margin-bottom: 1.375em;
+}
+
+.main-content__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+}
+
+.about-the-project {
+    margin-top: 4.2em;
+}
+
+.about-the-project__img {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+}
+
+.about-the-project__content {
+    grid-area: content;
+}
+
+.about-the-project__link {
+    grid-area: link;
+}
+
+.qualities-cards {
+    margin-top: var(--spacing-lg);
+}
+
+.qualities-cards__title {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    border-left: 5px solid var(--color-primary);
+}
+
+.qualities-cards__item-title,
+.qualities-cards__item-text {
+    text-align: center;
+}
+
+.qualities-cards__item-text {
+    margin-bottom: var(--spacing-md);
+}
+
+.graphy-family {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 1em;
+}
+
+.graphy-family__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graphy-family__img {
+    width: 25%;
+    max-width: 172px;
+    height: auto;
+}
+
+.graphy-family__name,
+.graphy-family__role,
+.graphy-family__tagline,
+.like-button {
+    margin-top: 0.625em;
+}
+
+.graphy-family__name {
+    font-size: 1.25em;
+}
+
+.like-button {
+    background: transparent;
+    border: none;
+}
+
+.creativity-section {
+    margin-top: 5.6em;
+}
+
+.creativity-section span {
+    margin-bottom: 1em;
+}
+
+.creativity-section__text {
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.feature span {
+    margin-top: var(--spacing-sm);
+    color: black;
+}
+
+.drawing {
+    margin-top: var(--spacing-sm);
+}
+
+.drawing__img {
+    width: 100%;
+    max-height: 374px;
+    height: auto;
+}
+
+.superpowers {
+    margin-top: var(--spacing-lg);
+}
+
+.superpowers__img-container img {
+    max-height: 417px;
+    height: auto;
+    width: 100%;
+}
+
+.opinions {
+    margin-top: var(--spacing-md);
+    background-image: url("../img/TAOF_Background-2.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.opinions__title {
+    text-align: center;
+}
+
+.opinions__card {
+    margin-top: 2.9375em;
+    text-align: center;
+}
+
+.colleagues {
+    margin-top: 5em;
+    text-align: center;
+}
+
+.colleagues__name {
+    margin-top: 1.136363636363636em;
+    font-size: 1.375em;
+}
+
+.colleagues__img {
+    display: inline-block;
+    padding: 1.875em 5.5em;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius-card);
+    margin-top: 2.5em;
+    background-color: white;
+    transition: background-color 0.8s ease;
+}
+
+.colleagues__img:hover {
+    background-color: #ACB502;
+}
+
+footer {
+    background-color: var(--color-dark);
+    text-align: center;
+    padding: 2em 2.375em 1.25em 2.375em;
+    margin-top: 5em;
+}
+
+footer a,
+address {
+    text-decoration: none;
+    color: white;
+    line-height: 24px;
+}
+
+.footer__logo p {
+    margin-top: 0;
+    color: white;
+}
+
+.footer__nav-menu h3,
+.footer__useful__title {
+    margin-top: 2.5em;
+    font-size: 1.5em;
+}
+
+.footer__friends {
+    margin-top: 3.3125em;
+}
+
+.footer__friends button {
+    margin-bottom: 1.25em;
+}
+
+.footer-menu__copyright {
+    font-size: 0.9em;
+    color: white;
+}
+
+label {
+    width: 100%;
+    align-self: center;
+    font-size: 1.125em;
+}
+
+.footer__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    margin-top: 1.0625em;
+    color: black;
+    border-radius: var(--border-radius-input);
+    min-height: 44px;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.footer__form input::placeholder {
+    color: lightslategrey;
+    text-align: center;
+}
+
+.form__submit--btn {
+    margin-top: 1em;
+    background-color: var(--color-button);
+    color: white;
+    width: 100%;
+    font-size: 1.25em;
+    padding: 0.5em 4.15em;
+    border-radius: var(--border-radius-input);
+    border: none;
+}
+
+@media (min-width: 744px) {
+    .qualities-cards__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .qualities-cards__item {
+        width: 50%;
+    }
+
+    .graphy-family__img {
+        max-height: 370px;
+        width: 25%;
+    }
+
+    .feature__container {
+        display: flex;
+        gap: 34px;
+    }
+
+    .drawing__img {
+        max-height: 660px;
+    }
+
+    .superpowers__img-container {
+        display: flex;
+    }
+
+    .colleagues__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer__logo,
+    .footer__nav-menu,
+    .footer__useful-links,
+    .footer__contacts {
+        width: 22%;
+    }
+
+    .footer__nav-menu h3,
+    .footer__useful__title {
+        margin-top: 0;
+    }
+
+    .footer__friends {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    .main__hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main-content {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .hero-image-wrapper {
+        width: 40%;
+    }
+
+    .hero-image-wrapper img {
+        width: 30%;
+        max-width: 575px;
+    }
+
+    .about-the-project {
+        display: grid;
+        grid-template-areas:
+            "content image"
+            "link image";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .about-the-project__img {
+        grid-area: image;
+        align-self: start;
+    }
+
+    .about-the-project__link {
+        width: 30%;
+    }
+
+    .qualities-cards__container {
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .graphy-family {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .graphy-family__member {
+        width: 20%;
+    }
+
+    .creativity-section {
+        display: flex;
+        gap: 100px;
+    }
+
+    .creativity-section__content {
+        width: 60%;
+        align-self: center;
+    }
+
+    .drawing {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .drawing__img {
+        width: 95%;
+    }
+
+    .superpowers {
+        margin-top: 7em;
+        display: flex;
+        gap: 30px;
+    }
+
+    .superpowers__content {
+        width: 50%;
+    }
+
+    .superpowers__img-container {
+        order: -1;
+    }
+
+    .superpowers__img-container img {
+        width: 45%;
+    }
+
+    .opinions {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .opinions h2 {
+        width: 100%;
+    }
+
+    .rating {
+        display: flex;
+        gap: 40px;
+    }
+
+    .opinions__card {
+        width: 33.33%;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+    input,
+    .form__submit--btn {
+        width: 60%;
+    }
+
+    .burger__menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding-top: 3.75em;
+    }
+
+    .header__nav {
+        max-height: none;
+        overflow: visible;
+        flex: 1;
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: center;
+        font-size: 1vw;
+        gap: 2rem;
+    }
+
+    header::after {
+        content: "";
+        width: 6em;
+    }
+
+    header p {
+        font-size: 2vw;
+    }
+}
